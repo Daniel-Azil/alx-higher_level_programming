@@ -4,6 +4,6 @@ def remove_char_at(str, n):
     az_var = 0
     for element in str:
         if az_var != n:
-           copy_of_str += element
+            copy_of_str += element
         az_var += 1
     return copy_of_str

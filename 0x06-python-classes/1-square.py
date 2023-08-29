@@ -5,7 +5,7 @@ class Square:
     """ Defining a Method """
 
     def __init__(self, size):
-        """ Method  Attribute
+        """ Initialize class named Square
         Args:
             size (int): Private Attribute of the class.
         """

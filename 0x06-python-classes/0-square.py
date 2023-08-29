@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ CLASS INITIALIZATION """
 
-class square:
+class Square:
 """ This class is defined to do nothing """
     pass

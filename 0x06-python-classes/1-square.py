@@ -3,6 +3,6 @@
 
 class Square:
     """ Defining a Method """
-    def __init__(object, size):
+    def __init__(self, size):
         """ Method  Attribute"""
-        object.__size = size
+        self.__size = size

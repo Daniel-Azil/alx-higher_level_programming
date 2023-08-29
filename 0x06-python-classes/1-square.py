@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" Initialization of Class """
+""" Initialization of Class
+
+    Contains the __init__ method
+
+    Initialises Private Attribute """
 
 class Square:
     """ Defining a Method """

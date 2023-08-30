@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Initilization of a class."""
+"""Initialised a class Square."""
 
 
 class Square:

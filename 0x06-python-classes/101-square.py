@@ -1,23 +1,19 @@
 #!/usr/bin/python3
-"""Define a class Square."""
+"""Initialised a class name Squared."""
 
 
 class Square:
-    """Represent a square."""
+    """class named square."""
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize a new square.
-
-        Args:
-            size (int): The size of the new square.
-            position (int, int): The position of the new square.
+        """Method instantiation.
         """
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """Get/set the current size of the square."""
+        """Getter and setter for square."""
         return (self.__size)
 
     @size.setter
@@ -30,7 +26,7 @@ class Square:
 
     @property
     def position(self):
-        """Get/set the current position of the square."""
+        """Getter and setter for square."""
         return (self.__position)
 
     @position.setter

@@ -4,7 +4,7 @@
 
 class Square:
     """ Initializing main method """
-    def __init__(self, size):
+    def __init__(self, size=0):
         """
         private attribute instance
         with type and value error

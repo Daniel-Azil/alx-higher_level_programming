@@ -11,12 +11,10 @@ class Square:
 
     @property
     def size(self):
-        """ Initialised getter for size"""
         return (self.__size)
 
     @size.setter
     def size(self, value):
-        """ initialised setter for size """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -25,7 +23,7 @@ class Square:
 
     @property
     def position(self):
-        """initialised getter for position."""
+        """Get/set the current position of the square"""
         return (self.__position)
 
     @position.setter
@@ -38,11 +36,11 @@ class Square:
         self.__position = value
 
     def area(self):
-        """initialised method name area to return size value."""
+        """Return the current area of the square.."""
         return (self.__size * self.__size)
 
     def my_print(self):
-        """method used in printing the character #."""
+        """Print the square with the # character.."""
         if self.__size == 0:
             print("")
             return

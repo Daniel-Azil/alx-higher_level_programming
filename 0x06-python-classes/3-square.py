@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Initialzation of Class """
+""" Initialzation of Class of the name Sqaure"""
 
 
 class Square(self, size):
@@ -8,7 +8,7 @@ class Square(self, size):
     def __init__(self, size):
         """
 
-        Initialising instance private attribute
+        Initialising instance Square
         defining conditions of type and value errors
         """
 
@@ -20,4 +20,5 @@ class Square(self, size):
             self.__size = size
 
     def area(self):
+        """ returns attribute value of the class sqaure"""
         return (self.__size * self.__size)

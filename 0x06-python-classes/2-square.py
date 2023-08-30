@@ -5,6 +5,9 @@
 class Square:
     """ Initializing main method """
     def __init__(self, size):
+        """ creates instance private attribute
+        with condition of type and value error
+        """
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:

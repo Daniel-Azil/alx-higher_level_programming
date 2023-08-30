@@ -1,22 +1,23 @@
 #!/usr/bin/python3
-"""Initialised a class Square."""
+"""class initialization."""
 
 
 class Square:
-    """ Defined a class named Square."""
+    """initailised class of the name square."""
 
-    def __init__(self, size):
-        """ Made an instantiation."""
+    def __init__(self, size=0):
+        """Initialize a method __init__.
+           The size of the new square.
+        """
         self.size = size
 
     @property
-    def size(self, size):
-    """Getter and setter of size for square."""
+    def size(self):
+        """Getter and setter for size of the square."""
         return (self.__size)
 
     @size.setter
     def size(self, value):
-        """ initialised setter."""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -24,5 +25,5 @@ class Square:
         self.__size = value
 
     def area(self):
-        """ initialised method named area."""
+        """Return square number passed from the instance."""
         return (self.__size * self.__size)

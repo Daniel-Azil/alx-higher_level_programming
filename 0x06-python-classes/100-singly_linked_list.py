@@ -1,23 +1,19 @@
 #!/usr/bin/python3
-"""Define classes for a singly-linked list."""
+"""Initialising class for singly-linked list in python."""
 
 
 class Node:
-    """Represent a node in a singly-linked list."""
+    """Created class name Node."""
 
     def __init__(self, data, next_node=None):
-        """Initialize a new Node.
-
-        Args:
-            data (int): The data of the new Node.
-            next_node (Node): The next node of the new Node.
+        """ created methd for instance named __init__.
         """
         self.data = data
         self.next_node = next_node
 
     @property
     def data(self):
-        """Get/set the data of the Node."""
+        """Getter and setter of Node."""
         return (self.__data)
 
     @data.setter
@@ -28,7 +24,7 @@ class Node:
 
     @property
     def next_node(self):
-        """Get/set the next_node of the Node."""
+        """Getter and setter of next_node."""
         return (self.__next_node)
 
     @next_node.setter
@@ -39,20 +35,14 @@ class Node:
 
 
 class SinglyLinkedList:
-    """Represent a singly-linked list."""
+    """Class named ingly-linked list."""
 
     def __init__(self):
-        """Initalize a new SinglyLinkedList."""
+        """method for instance."""
         self.__head = None
 
     def sorted_insert(self, value):
-        """Insert a new Node to the SinglyLinkedList.
-
-        The node is inserted into the list at the correct
-        ordered numerical position.
-
-        Args:
-            value (Node): The new Node to insert.
+        """ method for instantiation 
         """
         new = Node(value)
         if self.__head is None:
@@ -70,7 +60,7 @@ class SinglyLinkedList:
             tmp.next_node = new
 
     def __str__(self):
-        """Define the print() representation of a SinglyLinkedList."""
+        """method __str__"""
         values = []
         tmp = self.__head
         while tmp is not None:

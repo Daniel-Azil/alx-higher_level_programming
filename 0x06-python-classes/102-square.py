@@ -1,32 +1,22 @@
 #!/usr/bin/python3
-""" class Square that defines a square"""
+""" Initialization of class"""
 
 
 class Square:
-    """ class Square that defines a square"""
+    """ initialized class named sqaure"""
     def __init__(self, size=0):
-        """ init square
-
-        Args:
-            value (int): size of the square.
-        """
+        """ method instantiation """
         self.size = size
 
     @property
     def size(self):
-        """int: private size.
-
-        Returns:
-            Private size.
+        """getter for sqaure class
         """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Sets value into size, must be int.
-
-        Args:
-            value (int): size of the square.
+        """Setter for sqaure class
         """
         if type(value) is not int and type(value) is not float:
             raise TypeError('size must be a number')
@@ -36,10 +26,7 @@ class Square:
             self.__size = value  #: size of the square
 
     def area(self):
-        """returns the area
-
-        Returns:
-            area.
+        """ defined method named area
         """
         return self.__size**2
 

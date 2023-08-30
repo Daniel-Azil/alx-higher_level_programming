@@ -1,24 +1,21 @@
 #!/usr/bin/python3
-""" Initialzation of Class of the name Sqaure"""
+""" class Square that defines a square"""
 
 
-class Square(self, size):
-    """ Defining a class named Square """
+class Square:
+    """ class Square that defines a square"""
 
-    def __init__(self, size):
+    def __init__(self, size=0):
+        """initialize size of a square
         """
-
-        Initialising instance Square
-        defining conditions of type and value errors
-        """
-
         if type(size) is not int:
-            print("size must be an integer")
+            raise TypeError('size must be an integer')
         elif size < 0:
-            print("size must be >= 0")
+            raise ValueError('size must be >= 0')
         else:
-            self.__size = size
+            self.__size = size  #: size of the square
 
     def area(self):
-        """ returns attribute value of the class sqaure"""
+        """returns the area of a square
+        """
         return (self.__size * self.__size)

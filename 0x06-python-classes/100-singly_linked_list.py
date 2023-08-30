@@ -42,7 +42,7 @@ class SinglyLinkedList:
         self.__head = None
 
     def sorted_insert(self, value):
-        """ method for instantiation 
+        """ method for instantiation
         """
         new = Node(value)
         if self.__head is None:

@@ -15,7 +15,7 @@ class Square(self, size):
         if type(size) is not int:
             print("size must be an integer")
         elif size < 0:
-            print("")
+            print("size must be >= 0")
         else:
             self.__size = size
 

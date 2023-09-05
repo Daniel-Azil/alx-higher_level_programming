@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
     Initialised a class with constructor, setter and
     getter functionaliies
 """
@@ -19,7 +19,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """ method with getter functionality 
+        """ method with getter functionality
         """
         return self.__height
 

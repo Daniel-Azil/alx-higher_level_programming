@@ -19,13 +19,13 @@ class Rectangle:
 
     @property
     def height(self):
-        """ method with getter functionality 
+        """ method with getter functionality
         """
         return self.__height
 
     @width.setter
     def width(self, value):
-        """ method with setter functionality 
+        """ method with setter functionality
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")

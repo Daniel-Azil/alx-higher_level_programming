@@ -71,7 +71,8 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """ method that display given string when an instance attribute is deleted
+        """ method that display given string when an instance
+            attribute is deleted
         """
         type(self).number_of_instances -= 1
         print("Bye rectangle...")

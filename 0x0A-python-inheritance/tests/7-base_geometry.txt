@@ -1,0 +1,161 @@
+Test Case for the Module ``7-base_geometry``
+
+=================================================================
+=================================================================
+
+Importing class from the module:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.area()
+    Traceback (most recent call last):
+    	      ...
+    Exception: area() is not implemented
+
+===================================================================
+===================================================================
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("name", "7")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
+
+===================================================================
+===================================================================
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("name", True)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: name must be an integer
+
+===================================================================
+===================================================================
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("name", -4)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
+
+===================================================================
+===================================================================
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("name", 0)
+    Traceback (most recent call last):
+    	      ...
+    ValueError: name must be greater than 0
+
+===================================================================
+===================================================================
+
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("name", 5)
+
+
+===================================================================
+===================================================================
+
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("name")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+
+===================================================================
+===================================================================
+
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator()
+    Traceback (most recent call last):
+    	      ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+=====================================================================
+=====================================================================
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("name", 1, 2)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+=====================================================================
+===================================================================== 
+
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.area(5)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: area() takes 1 positional argument but 2 were given
+
+=====================================================================
+===================================================================== 
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.area(5, 5)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: area() takes 1 positional argument but 3 were given
+
+
+=====================================================================
+===================================================================== 
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("age", (4,))
+    Traceback (most recent call last):
+    	      ...
+    TypeError: age must be an integer
+
+
+=====================================================================
+===================================================================== 
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("age", [3])
+    Traceback (most recent call last):
+    	      ...
+    TypeError: age must be an integer
+
+=====================================================================
+=====================================================================
+
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("age", {3, 4})
+    Traceback (most recent call last):
+              ...
+    TypeError: age must be an integer
+
+
+==================================================================
+==================================================================
+
+test case
+    >>> az_custom = BaseGeometry()
+    >>> az_custom.integer_validator("age", None)
+    Traceback (most recent call last):
+              ...
+    TypeError: age must be an integer

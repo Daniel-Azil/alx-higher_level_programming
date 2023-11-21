@@ -6,5 +6,5 @@ if (cmd_argument)
 }
 else
 {
-console.log("No argument");
+	console.log("No argument");
 }

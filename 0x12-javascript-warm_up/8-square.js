@@ -9,7 +9,8 @@ if (isNaN(arg)) {
   console.log('Missing size');
 } else {
   for (let arg_num = 0; arg_num < arg; arg_num++) {
-    char_arg += 'X';
+    let arg_ds = '';
+    for (let itr = 0; itr < arg; itr++) arg_ds += 'X';
+    console.log(arg_ds);
   }
-  console.log(char_arg);
 }

@@ -2,12 +2,10 @@
 
 // A script that prints the first argument passed to it
 
-const cmd_argument = process.argv[2];
-if (cmd_argument)
-{
-	console.log(cmd_argument);
-}
-else
-{
-	console.log("No argument");
+const cmdArgument = process.argv[2];
+
+if (cmdArgument) {
+    console.log(cmdArgument);
+} else {
+    console.log("No argument");
 }

@@ -1,14 +1,11 @@
 #!/usr/bin/node
 
-// A script that prints a message depending of
+// A script that prints a message depending on
 // the number of arguments passed
 
-const process_arg = process.argv.length;
-if (process_arg == 2)
-{
-	console.log("No argument");
-}
-else 
-{
-	console.log("Argument found");
+const processArg = process.argv.length;
+if (processArg === 2) {
+  console.log('No argument');
+} else {
+  console.log('Argument found');
 }

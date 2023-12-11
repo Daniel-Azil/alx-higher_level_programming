@@ -5,10 +5,10 @@
 
 function recursive_factorial (arg) {
     if (isNaN(arg) || arg === 0) {
-        return 1;
+        return (1);
     } else {
         return (arg * recursive_factorial(arg - 1));
     }
 }
 
-console.log(recursive_factorial(process.argv[2]));
+console.log(recursive_factorial(parseInt(process.argv[2])));

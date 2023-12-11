@@ -4,8 +4,4 @@
 // the number of arguments passed
 
 const processArg = process.argv.length;
-if (processArg === 2) {
-  console.log('No argument');
-} else {
-  console.log('Argument found');
-}
+console.log(processArg === 2 ? 'No argument' : processArg === 3 ? 'Argument found' : 'Argument found');

@@ -21,8 +21,8 @@ if __name__ == "__main__":
                    ORDER BY cities.id ASC""", (sys.argv[4],))
 
     records = cursor.fetchall()
-
-    print(', '.join(["{:s}".format(values[0]) for values in records]))
+    var = list(records[0] for value in records)
+    print(*var, sep=", ")
 
     cursor.close()
     database_connect.close()

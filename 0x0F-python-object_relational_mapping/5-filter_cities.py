@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     records = cursor.fetchall()
 
-    print(', '.join(["{:s}".format(value[0]) for values in records]))
+    print(', '.join(["{:s}".format(values[0]) for values in records]))
 
     cursor.close()
     database_connect.close()

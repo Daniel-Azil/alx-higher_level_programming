@@ -11,7 +11,7 @@ if __name__ == "__main__":
                                        port=3306)
 
     cursor = database_connect.cursor()
-    cursor.execute(""""SELECT cities.id, cities.name, states.name
+    cursor.execute("""SELECT cities.id, cities.name, states.name
                    FROM states INNER JOIN cities
                    ON states.id = cities.state_id
                    ORDER BY cities.id ASC""")

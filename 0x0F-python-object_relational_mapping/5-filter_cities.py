@@ -17,7 +17,7 @@ if __name__ == "__main__":
     cursor.execute("""SELECT cities.name
                    FROM states INNER JOIN cities
                    ON states.id = cities.state_id
-                   WHERE states.name LIKE %s
+                   WHERE states.name=%s
                    ORDER BY cities.id ASC""", (sys.argv[4],))
 
     records = cursor.fetchall()

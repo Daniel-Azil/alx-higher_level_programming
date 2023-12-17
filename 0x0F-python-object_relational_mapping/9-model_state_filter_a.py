@@ -19,7 +19,7 @@ if __name__ == "__main__":
                                     format(user, passwd, database),
                                     pool_pre_ping=True)
 
-    Base.metadate.create_all(database_engine)
+    Base.metadata.create_all(database_engine)
     Session = sessionmaker(bind=database_engine)
 
     session = Session()

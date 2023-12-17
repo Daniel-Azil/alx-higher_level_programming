@@ -19,3 +19,5 @@ with N (upper N) from the database `hbtn_0e_0_usa`.
 - **11-model_state_insert.py:** A script that adds the State object “Louisiana” to the database hbtn_0e_6_usa
 - **12-model_state_update_id_2.py:** A script that changes the name of a State object from the database hbtn_0e_6_usa
 - **13-model_state_delete_a.py:** A script that deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa
+- **model_cities.py:** A Python file similar to model_state.py named model_city.py that contains the class definition of a City.
+- **14-model_city_fetch_by_state.py:** A  script 14-model_city_fetch_by_state.py that prints all City objects from the database hbtn_0e_14_usa

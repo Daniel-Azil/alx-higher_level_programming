@@ -21,3 +21,4 @@ with N (upper N) from the database `hbtn_0e_0_usa`.
 - **13-model_state_delete_a.py:** A script that deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa
 - **model_cities.py:** A Python file similar to model_state.py named model_city.py that contains the class definition of a City.
 - **14-model_city_fetch_by_state.py:** A  script 14-model_city_fetch_by_state.py that prints all City objects from the database hbtn_0e_14_usa
+- **100-relationship_states_cities.py:** A script that creates the State “California” with the City “San Francisco” from the database hbtn_0e_100_usa

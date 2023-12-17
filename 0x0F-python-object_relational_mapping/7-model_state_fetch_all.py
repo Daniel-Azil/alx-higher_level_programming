@@ -13,7 +13,8 @@ if __name__ == "__main__":
     passwd = sys.argv[2]
     db = sys.argv[3]
     engine = sqlalchemy.create_engine('mysql+mysqldb://{}:{}@localhost/{}'.
-                                                    format(user, passwd, db), pool_pre_ping=True)
+                                      format(user, passwd, db),
+                                      pool_pre_ping=True)
     Session = sqlalchemy.orm.sessionmaker(bind=engine)
     session = Session()
 

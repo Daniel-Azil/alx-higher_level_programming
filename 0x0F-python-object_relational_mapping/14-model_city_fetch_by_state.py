@@ -25,10 +25,8 @@ if __name__ == '__main__':
 
     session = Session()
 
-    state_city_records = session.query(State, City) \
-        .filter(State.id == City.state_id)
-
-    for state, city in state_city_records:
-        print("{}: ({}) {}".format(state.name, city.id, city.name))
+    for q in session.query(State.name, City.id, City.name).filter(
+            State.id == City.state_id).order_by(City.id):
+        print("{:s}: ({:d}) {:s}".format(q[0], q[1], q[2]))
 
     session.close()

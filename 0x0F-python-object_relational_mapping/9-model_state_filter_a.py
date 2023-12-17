@@ -28,6 +28,6 @@ if __name__ == "__main__":
                     .order_by(State.id).all()
 
     for names in record:
-        print("{}: {}". format(name.id, name.name))
+        print("{}: {}". format(names.id, names.name))
 
     session.close()

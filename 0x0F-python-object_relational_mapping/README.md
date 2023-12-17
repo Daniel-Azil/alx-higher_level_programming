@@ -16,3 +16,4 @@ with N (upper N) from the database `hbtn_0e_0_usa`.
 - **8-model_state_fetch_first.py:** A script that prints the first State object from the database hbtn_0e_6_usa.
 - **9-model_state_filter_a.py:** A script that lists all State objects that contain the letter a from the database hbtn_0e_6_usa
 - **10-model_state_my_get.py:** A script that prints the State object with the name passed as argument from the database hbtn_0e_6_usa.
+- **11-model_state_insert.py:** A script that adds the State object “Louisiana” to the database hbtn_0e_6_usa

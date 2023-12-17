@@ -3,11 +3,12 @@
     A script that creates the City table in db
 """
 
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
-Base = declarative_base()
+mydata = MetaData()
+Base = declarative_base(mymetadata=mydata)
 
 
 class State(Base):
@@ -19,4 +20,4 @@ class State(Base):
 
     id = Column(Integer, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
-    cities = relationship("City", backref="state")
+    cities = relationship("City", backref="states")

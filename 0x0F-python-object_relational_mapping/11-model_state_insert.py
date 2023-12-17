@@ -29,7 +29,7 @@ if __name__ == "__main__":
     session.add(new_record)
     session.commit()
 
-    new_record = session.query(State).filter(State.name=="Louisiana").one()
+    new_record = session.query(State).filter(State.name == "Louisiana").one()
     print(new_record.id)
 
     session.close()

@@ -22,3 +22,4 @@ with N (upper N) from the database `hbtn_0e_0_usa`.
 - **model_cities.py:** A Python file similar to model_state.py named model_city.py that contains the class definition of a City.
 - **14-model_city_fetch_by_state.py:** A  script 14-model_city_fetch_by_state.py that prints all City objects from the database hbtn_0e_14_usa
 - **100-relationship_states_cities.py:** A script that creates the State “California” with the City “San Francisco” from the database hbtn_0e_100_usa
+- **101-relationship_states_cities_list.py:** A script that lists all State objects, and corresponding City objects, contained in the database hbtn_0e_101_usa

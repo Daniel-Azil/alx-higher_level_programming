@@ -19,3 +19,5 @@ if __name__ == "__main__":
         for city_rel in state_record.cities:
             print(city_rel.id, city_rel.name, sep=": ", end="")
             print(" -> " + state_record.name)
+
+    session.close()

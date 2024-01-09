@@ -34,3 +34,6 @@ Initiates a request to a specified URL and displays only the response status cod
 ### 101-post_json.sh
 Initiates a JSON POST request to a specified URL using a given JSON file.
 
+### 102-catch_me.sh
+This script makes a request to 0.0.0.0:5000/catch_me and performs a PUT request to set a header variable, resulting in the message "You got me!".
+
